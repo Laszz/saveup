@@ -1,50 +1,95 @@
-# Welcome to your Expo app 👋
+# SaveUp 💰
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+SaveUp adalah aplikasi mobile untuk membantu pengguna mengatur keuangan dan membangun kebiasaan menabung dalam satu aplikasi.
 
-## Get started
+Aplikasi ini menggabungkan pencatatan pemasukan, pengeluaran, target tabungan, riwayat transaksi, dan statistik keuangan dengan tampilan yang sederhana dan mudah digunakan.
 
-1. Install dependencies
+> 🚧 Project ini masih dalam tahap pengembangan.
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+## ✨ Fitur
 
-   ```bash
-   npx expo start
-   ```
+### 🏠 Dashboard
 
-In the output, you'll find options to open the app in a
+- Melihat total saldo
+- Ringkasan pemasukan dan pengeluaran
+- Melihat progress target tabungan
+- Quick action untuk menambah pemasukan dan pengeluaran
+- Melihat transaksi terbaru
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### 🎯 Saving Goals
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- Membuat beberapa target tabungan
+- Menentukan nominal target
+- Melihat progress tabungan
+- Menambahkan dana ke target tabungan
+- Melakukan penarikan dari tabungan
 
-## Get a fresh project
+### 💰 Keuangan
 
-When you're ready, run:
+- Mencatat pemasukan
+- Mencatat pengeluaran
+- Mengedit transaksi
+- Menghapus transaksi
+- Melihat daftar pemasukan dan pengeluaran
+- Filter berdasarkan jenis transaksi
 
-```bash
-npm run reset-project
+### 📋 Riwayat
+
+- Melihat seluruh aktivitas keuangan
+- Pemasukan
+- Pengeluaran
+- Menabung
+- Penarikan tabungan
+
+### 📊 Statistik
+
+- Ringkasan kondisi keuangan
+- Perbandingan pemasukan dan pengeluaran
+- Progress target tabungan
+- Visualisasi data keuangan
+
+### 🔥 Saving Streak
+
+- Membangun kebiasaan menabung
+- Menampilkan streak menabung
+- Memberikan motivasi agar konsisten
+
+---
+
+## 📱 Tech Stack
+
+- **React Native**
+- **Expo**
+- **Expo Router**
+- **TypeScript**
+- **JavaScript**
+- **Android**
+
+---
+
+## 🎨 Design
+
+SaveUp menggunakan desain yang:
+
+- Minimalis
+- Clean
+- Modern
+- Mudah digunakan
+- Fokus pada informasi keuangan
+- Menggunakan warna utama `#0E5A3A`
+
+Logo dan asset aplikasi menggunakan satu identitas visual yang konsisten di seluruh aplikasi.
+
+---
+
+## 🗂️ Struktur Navigasi
+
+SaveUp menggunakan bottom navigation:
+
+```text
+┌────────┬────────┬──────────┬─────────┬──────────┐
+│  Home  │ Goals  │ Keuangan │ Riwayat │ Statistik│
+└────────┴────────┴──────────┴─────────┴──────────┘
 ```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
