@@ -1,16 +1,34 @@
-# SaveUp 💰
+# SaveUp
 
-SaveUp adalah aplikasi mobile untuk membantu pengguna mengatur keuangan dan membangun kebiasaan menabung dalam satu aplikasi.
+<p align="center">
+  <img src="./assets/images/icon.png" width="120" alt="SaveUp Logo">
+</p>
 
-Aplikasi ini menggabungkan pencatatan pemasukan, pengeluaran, target tabungan, riwayat transaksi, dan statistik keuangan dengan tampilan yang sederhana dan mudah digunakan.
+<p align="center">
+  <strong>Personal Finance & Saving App</strong>
+</p>
+
+<p align="center">
+  Aplikasi mobile untuk membantu pengguna mengatur keuangan dan membangun kebiasaan menabung dalam satu aplikasi.
+</p>
 
 > 🚧 Project ini masih dalam tahap pengembangan.
 
 ---
 
-## ✨ Fitur
+## Download
 
-### 🏠 Dashboard
+Versi APK terbaru dapat diunduh melalui MediaFire:
+
+**[Download SaveUp APK](https://www.mediafire.com/file/v6umjqjakv8dmx6/SaveUp.apk/file)**
+
+> Saat ini SaveUp ditujukan untuk perangkat Android.
+
+---
+
+## Fitur
+
+### Dashboard
 
 - Melihat total saldo
 - Ringkasan pemasukan dan pengeluaran
@@ -18,7 +36,7 @@ Aplikasi ini menggabungkan pencatatan pemasukan, pengeluaran, target tabungan, r
 - Quick action untuk menambah pemasukan dan pengeluaran
 - Melihat transaksi terbaru
 
-### 🎯 Saving Goals
+### Saving Goals
 
 - Membuat beberapa target tabungan
 - Menentukan nominal target
@@ -26,7 +44,7 @@ Aplikasi ini menggabungkan pencatatan pemasukan, pengeluaran, target tabungan, r
 - Menambahkan dana ke target tabungan
 - Melakukan penarikan dari tabungan
 
-### 💰 Keuangan
+### Keuangan
 
 - Mencatat pemasukan
 - Mencatat pengeluaran
@@ -35,7 +53,7 @@ Aplikasi ini menggabungkan pencatatan pemasukan, pengeluaran, target tabungan, r
 - Melihat daftar pemasukan dan pengeluaran
 - Filter berdasarkan jenis transaksi
 
-### 📋 Riwayat
+### Riwayat
 
 - Melihat seluruh aktivitas keuangan
 - Pemasukan
@@ -43,14 +61,14 @@ Aplikasi ini menggabungkan pencatatan pemasukan, pengeluaran, target tabungan, r
 - Menabung
 - Penarikan tabungan
 
-### 📊 Statistik
+### Statistik
 
 - Ringkasan kondisi keuangan
 - Perbandingan pemasukan dan pengeluaran
 - Progress target tabungan
 - Visualisasi data keuangan
 
-### 🔥 Saving Streak
+### Saving Streak
 
 - Membangun kebiasaan menabung
 - Menampilkan streak menabung
@@ -58,7 +76,7 @@ Aplikasi ini menggabungkan pencatatan pemasukan, pengeluaran, target tabungan, r
 
 ---
 
-## 📱 Tech Stack
+## Tech Stack
 
 - **React Native**
 - **Expo**
@@ -69,7 +87,7 @@ Aplikasi ini menggabungkan pencatatan pemasukan, pengeluaran, target tabungan, r
 
 ---
 
-## 🎨 Design
+## Design
 
 SaveUp menggunakan desain yang:
 
@@ -78,18 +96,3 @@ SaveUp menggunakan desain yang:
 - Modern
 - Mudah digunakan
 - Fokus pada informasi keuangan
-- Menggunakan warna utama `#0E5A3A`
-
-Logo dan asset aplikasi menggunakan satu identitas visual yang konsisten di seluruh aplikasi.
-
----
-
-## 🗂️ Struktur Navigasi
-
-SaveUp menggunakan bottom navigation:
-
-```text
-┌────────┬────────┬──────────┬─────────┬──────────┐
-│  Home  │ Goals  │ Keuangan │ Riwayat │ Statistik│
-└────────┴────────┴──────────┴─────────┴──────────┘
-```
