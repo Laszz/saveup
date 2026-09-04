@@ -68,36 +68,20 @@ export default function SettingsScreen() {
       let t = time;
       if (!isValidTime(t)) { t = "20:00"; setTime(t); setTimeErr(""); }
       const perm = await Notifications.requestPermissionsAsync();
-      // @ts-ignore
-      const status =
-        (perm as any).status || (perm as any).granted ? "granted" : "denied";
-      if (status !== "granted") {
+      if (perm.status !== "granted") {
         showSnack("Izin notifikasi ditolak, pengingat mati");
         await setSettings({ reminderEnabled: false });
         return;
       }
-      await Notifications.cancelAllScheduledNotificationsAsync();
       const [h, m] = t.split(":").map(Number);
-      try {
-        await Notifications.scheduleNotificationAsync({
-          content: {
-            title: "💰 Saatnya menabung!",
-            body: "Jangan lupa menambahkan tabungan hari ini.",
-          },
-          trigger: { type: Notifications.SchedulableTriggerInputTypes.DAILY, hour: h, minute: m } as any,
-        });
-      } catch {
-        // fallback for older SDK shape
-        await Notifications.scheduleNotificationAsync({
-          content: { title: "💰 Saatnya menabung!", body: "Jangan lupa menambahkan tabungan hari ini." },
-          trigger: { type: 'daily', hour: h, minute: m } as any,
-        });
-      }
+      const { scheduleDailyReminder } = await import('@/src/services/reminder');
+      await scheduleDailyReminder(h, m);
       showSnack(`Pengingat aktif jam ${t}`);
       await setSettings({ reminderEnabled: val, reminderTime: t });
       return;
     } else {
-      await Notifications.cancelAllScheduledNotificationsAsync();
+      const { cancelReminders } = await import('@/src/services/reminder');
+      await cancelReminders();
       showSnack("Pengingat dimatikan");
     }
     await setSettings({ reminderEnabled: val, reminderTime: time });
@@ -110,22 +94,9 @@ export default function SettingsScreen() {
     try {
       await setSettings({ reminderTime: time });
       if (settings.reminderEnabled) {
-        await Notifications.cancelAllScheduledNotificationsAsync();
         const [h, m] = time.split(":").map(Number);
-        try {
-          await Notifications.scheduleNotificationAsync({
-            content: {
-              title: "💰 Saatnya menabung!",
-              body: "Jangan lupa menambahkan tabungan hari ini.",
-            },
-            trigger: { type: Notifications.SchedulableTriggerInputTypes.DAILY, hour: h, minute: m } as any,
-          });
-        } catch {
-          await Notifications.scheduleNotificationAsync({
-            content: { title: "💰 Saatnya menabung!", body: "Jangan lupa menambahkan tabungan hari ini." },
-            trigger: { type: 'daily', hour: h, minute: m } as any,
-          });
-        }
+        const { scheduleDailyReminder } = await import('@/src/services/reminder');
+        await scheduleDailyReminder(h, m);
       }
       showSnack("Waktu pengingat disimpan");
     } finally {

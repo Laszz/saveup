@@ -72,19 +72,9 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       try{
         const perm=await Notifications.getPermissionsAsync();
         if(perm.status!=='granted') return;
-        await Notifications.cancelAllScheduledNotificationsAsync();
+        const { scheduleDailyReminder } = await import('@/src/services/reminder');
         const [h,m]=t.split(':').map(Number);
-        try{
-          await Notifications.scheduleNotificationAsync({
-            content:{ title:'💰 Saatnya menabung!', body:'Jangan lupa menambahkan tabungan hari ini.' },
-            trigger:{ type: (Notifications as any).SchedulableTriggerInputTypes.DAILY, hour:h, minute:m } as any,
-          });
-        }catch{
-          await Notifications.scheduleNotificationAsync({
-            content:{ title:'💰 Saatnya menabung!', body:'Jangan lupa menambahkan tabungan hari ini.' },
-            trigger:{ type:'daily', hour:h, minute:m } as any,
-          });
-        }
+        await scheduleDailyReminder(h, m);
       }catch{}
     })();
   },[ready, settings.reminderEnabled, settings.reminderTime]);
