@@ -1,4 +1,4 @@
-# SaveUp 💰
+# SaveUp
 
 <p align="center">
   <img src="./assets/images/icon.png" width="120" alt="SaveUp Logo">
@@ -11,10 +11,6 @@
 <p align="center">
   Aplikasi mobile untuk membantu pengguna mengatur keuangan dan membangun kebiasaan menabung dalam satu aplikasi.
 </p>
-
-> 🚧 Project ini masih dalam tahap pengembangan.
-
----
 
 ## 📱 Download
 
@@ -30,9 +26,9 @@ Versi APK terbaru dapat diunduh melalui MediaFire:
 
 ---
 
-## ✨ Fitur
+## Fitur
 
-### 🏠 Dashboard
+### Dashboard
 
 - Melihat total saldo
 - Ringkasan pemasukan dan pengeluaran
@@ -40,7 +36,7 @@ Versi APK terbaru dapat diunduh melalui MediaFire:
 - Quick action untuk menambah pemasukan dan pengeluaran
 - Melihat transaksi terbaru
 
-### 🎯 Saving Goals
+### Saving Goals
 
 - Membuat beberapa target tabungan
 - Menentukan nominal target
@@ -48,7 +44,7 @@ Versi APK terbaru dapat diunduh melalui MediaFire:
 - Menambahkan dana ke target tabungan
 - Melakukan penarikan dari tabungan
 
-### 💰 Keuangan
+### Keuangan
 
 - Mencatat pemasukan
 - Mencatat pengeluaran
@@ -57,7 +53,7 @@ Versi APK terbaru dapat diunduh melalui MediaFire:
 - Melihat daftar pemasukan dan pengeluaran
 - Filter berdasarkan jenis transaksi
 
-### 📋 Riwayat
+### Riwayat
 
 - Melihat seluruh aktivitas keuangan
 - Pemasukan
@@ -65,14 +61,14 @@ Versi APK terbaru dapat diunduh melalui MediaFire:
 - Menabung
 - Penarikan tabungan
 
-### 📊 Statistik
+### Statistik
 
 - Ringkasan kondisi keuangan
 - Perbandingan pemasukan dan pengeluaran
 - Progress target tabungan
 - Visualisasi data keuangan
 
-### 🔥 Saving Streak
+### Saving Streak
 
 - Membangun kebiasaan menabung
 - Menampilkan streak menabung
@@ -80,7 +76,7 @@ Versi APK terbaru dapat diunduh melalui MediaFire:
 
 ---
 
-## 🖼️ Screenshots
+## Screenshots
 
 ### 01 — Onboarding
 
@@ -120,7 +116,7 @@ Versi APK terbaru dapat diunduh melalui MediaFire:
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **React Native**
 - **Expo**
@@ -131,7 +127,7 @@ Versi APK terbaru dapat diunduh melalui MediaFire:
 
 ---
 
-## 🎨 Design
+## Design
 
 SaveUp menggunakan desain yang:
 
@@ -145,13 +141,3 @@ SaveUp menggunakan desain yang:
 Logo dan asset aplikasi menggunakan satu identitas visual yang konsisten di seluruh aplikasi.
 
 ---
-
-## 🗂️ Struktur Navigasi
-
-SaveUp menggunakan bottom navigation:
-
-```text
-┌──────────┬────────┬──────────┬──────────┬───────────┐
-│  Riwayat │ Goals  │   Home   │ Keuangan │ Statistik │
-└──────────┴────────┴──────────┴──────────┴───────────┘
-```
