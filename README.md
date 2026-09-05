@@ -12,13 +12,13 @@
   Aplikasi mobile untuk membantu pengguna mengatur keuangan dan membangun kebiasaan menabung dalam satu aplikasi.
 </p>
 
-## 📱 Download
+## Download
 
 Versi APK terbaru dapat diunduh melalui MediaFire:
 
 <p align="center">
   <a href="https://www.mediafire.com/file/xicqc3100j53qvh/SaveUp.apk/file">
-    <strong>⬇️ Download SaveUp APK</strong>
+    <strong>Download SaveUp APK</strong>
   </a>
 </p>
 
